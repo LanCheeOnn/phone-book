@@ -1,6 +1,13 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Examples 
+<h2>Navigation Menu</h2>
+  <img src="src/assets/Navigation.gif" alt="Navigation" width="80%" />
+<br>
+<h2>Adding Contact</h2>
+  <img src="src/assets/AddContact.gif" alt="Add Contact" width="80%" />
+<br>
+<h2>Deleting Contact</h2>
+  <img src="src/assets/DeleteContact.gif" alt="Delete Contact" width="80%" />
+<br>
 
 ### Setup
 

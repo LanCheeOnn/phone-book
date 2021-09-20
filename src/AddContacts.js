@@ -1,9 +1,11 @@
 import { useState } from "react";
+import { useHistory } from "react-router-dom";
 
 const AddContacts = () => {
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+  const history = useHistory();
 
   const handleSubmit = (e) => {
     // Prevent page refresh
@@ -18,7 +20,9 @@ const AddContacts = () => {
       body: JSON.stringify(contact)
     }).then(() => {
       setIsLoading(false);
+      history.go(-1);
     })
+
   }
 
   return (

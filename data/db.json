@@ -1,24 +1,3 @@
 {
-  "contacts": [
-    {
-      "name": "Onn",
-      "phone": "012-345-6789",
-      "id": 1
-    },
-    {
-      "name": "Mark",
-      "phone": "900-500-4000",
-      "id": 2
-    },
-    {
-      "name": "John Doe",
-      "phone": "100-200-3000",
-      "id": 3
-    },
-    {
-      "name": "Jordan Walke",
-      "phone": "555-100-1300",
-      "id": 4
-    }
-  ]
+  "contacts": []
 }
