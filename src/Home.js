@@ -1,36 +1,15 @@
 import { useState, useEffect } from 'react';
 import ContactList from './ContactList';
 import LoadingIcons from 'react-loading-icons'
+import useFetch from './useFetch';
 
 const Home = () => {
-  const [contacts, setContacts] = useState(null);
-  const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const { data: contacts, isLoading, error } = useFetch('http://localhost:8000/contacts');
 
   const handleDelete = (id) => {
     const newContacts = contacts.filter(contact => contact.id !== id);
-    setContacts(newContacts);
+    // setContacts(newContacts);
   }
-
-  useEffect(() => {
-    // Retrieves Data from json
-    fetch('http://localhost:8000/contacts')
-      .then(res => {
-        if (!res.ok) {
-          throw Error('Could not fetch the data');
-        }
-        return res.json();
-      })
-      .then(data => {
-        setContacts(data);
-        setIsLoading(false);
-        setError(null);
-      })
-      .catch(err => {
-        setError(err.message);
-        setIsLoading(false);
-      })
-  }, [])
 
   return (
     <div className="home">

@@ -6,7 +6,9 @@ const ContactList = ({contacts, title, handleDelete}) => {
         <div className="contact-preview" key={contact.id}>
           <h3> {contact.name} </h3>
           <p> {contact.phone} </p>
-          <button onClick={() => handleDelete(contact.id)}>Delete Contact</button>
+          <div className="deleteBtn">
+            <button onClick={() => handleDelete(contact.id)}>Delete Contact</button>
+          </div>
         </div>
       ))}
     </div>
