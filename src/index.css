@@ -35,6 +35,34 @@
 }
 .content {
   max-width: 600px;
-  margin: 40px auto;
+  margin: 20px auto;
   padding: 20px;
+}
+
+/* Contact Preview List */
+.contact-preview {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid white;
+}
+.contact-preview:hover{
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+}
+.contact-preview h3{
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 8px;
+}
+
+/* Loading */
+.Loading{
+  max-width: 60px;
+  align-items: center;
+  padding: auto;
+  margin: auto;
+}
+
+.Loading p{
+  display: flex;
+  justify-content: center;
 }
