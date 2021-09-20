@@ -2,6 +2,22 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### Setup
+
+In a terminal :
+```bash
+
+# Clone the repository
+$ git clone https://github.com/LanCheeOnn/phone-book
+$ cd phone-boom
+
+# Install the dependencies
+$ npm install
+
+# Launch the development server
+$ yarn start
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
