@@ -26,8 +26,8 @@ const useFetch = (url) => {
         if (err.name === 'AbortError') {
           console.log('Fetch Aborted');
         } else {
-          setError(err.message);
           setIsLoading(false);
+          setError(err.message);
         }
       })
     
