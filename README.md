@@ -16,6 +16,9 @@ $ npm install
 
 # Launch the development server
 $ yarn start
+
+# Watches db.json for backend
+$ npx json-server --watch data/db.json --port 8000
 ```
 
 ## Available Scripts
