@@ -73,3 +73,36 @@
   display: flex;
   justify-content: right;
 }
+
+/* Create a new contact form */
+.AddContacts {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.AddContacts label {
+  text-align: left;
+  display: block;
+}
+.AddContacts h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 10px;
+}
+.AddContacts input, .AddContacts textarea, .AddContacts select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+.AddContacts button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
