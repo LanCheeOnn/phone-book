@@ -1,15 +1,9 @@
-import { useState, useEffect } from 'react';
 import ContactList from './ContactList';
 import LoadingIcons from 'react-loading-icons'
 import useFetch from './useFetch';
 
 const Home = () => {
   const { data: contacts, isLoading, error } = useFetch('http://localhost:8000/contacts');
-
-  const handleDelete = (id) => {
-    const newContacts = contacts.filter(contact => contact.id !== id);
-    // setContacts(newContacts);
-  }
 
   return (
     <div className="home">
@@ -24,7 +18,7 @@ const Home = () => {
       />
         <p>Loading...</p>
       </div>}
-      {contacts && <ContactList contacts={contacts} title="Contacts:" handleDelete={handleDelete}/>}
+      {contacts && <ContactList contacts={contacts} title="Contacts:"/>}
     </div>
   )
 }
