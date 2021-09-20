@@ -1,5 +1,4 @@
 import { useHistory, useParams } from "react-router-dom";
-import useFetch from "./useFetch";
 
 const ContactList = ({ contacts, title }) => {
   const history = useHistory();
@@ -18,7 +17,7 @@ const ContactList = ({ contacts, title }) => {
       {contacts.map((contact) => (
         <div className="contact-preview" key={contact.id}>
           <h3> {contact.name} </h3>
-          <p> {contact.phone} </p>
+          <p>Contact Number: {contact.phone} </p>
           <div className="deleteBtn">
             <button onClick={() => handleDelete(contact.id)}>Delete Contact</button>
           </div>

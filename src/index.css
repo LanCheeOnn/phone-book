@@ -10,7 +10,7 @@
   padding: 20px;
   display: flex;
   align-items: center;
-  max-width: 600px;
+  max-width: auto;
   margin: 0 auto;
   border-bottom: 3px solid black;
   border-top: 3px double #f1356d;
@@ -34,7 +34,7 @@
   color: #f1356d;
 }
 .content {
-  max-width: 600px;
+  max-width: auto;
   margin: 20px auto;
   padding: 20px;
 }
@@ -44,6 +44,10 @@
   padding: 10px 16px;
   margin: 20px 0;
   border-bottom: 1px solid white;
+}
+
+.contact-preview p{
+  display: flex;
 }
 .contact-preview:hover{
   box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
@@ -56,7 +60,7 @@
 
 /* Loading */
 .Loading{
-  max-width: 60px;
+  max-width: auto;
   align-items: center;
   padding: auto;
   margin: auto;
@@ -76,7 +80,7 @@
 
 /* Create a new contact form */
 .AddContacts {
-  max-width: 400px;
+  max-width: 60%;
   margin: 0 auto;
   text-align: center;
 }
