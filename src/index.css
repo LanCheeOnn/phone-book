@@ -62,6 +62,7 @@
   margin: auto;
 }
 
+/* Paragraph centered */
 .Loading p{
   display: flex;
   justify-content: center;
